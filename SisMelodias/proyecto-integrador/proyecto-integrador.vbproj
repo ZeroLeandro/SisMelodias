@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1EF8048-F70F-4B45-B75E-00C3C7E2B9E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>proyecto_integrador.My.MyApplication</StartupObject>
+    <RootNamespace>proyecto_integrador</RootNamespace>
+    <AssemblyName>proyecto-integrador</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>proyecto-integrador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>proyecto-integrador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=4d63bfbfdfd3c6e4, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Core.1.6.0\lib\net452\BCrypt.Net-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capas\Dcategoria.vb" />
+    <Compile Include="Capas\Dcliente.vb" />
+    <Compile Include="Capas\Ddetalle_venta.vb" />
+    <Compile Include="Capas\Dempleado.vb" />
+    <Compile Include="Capas\DPago.vb" />
+    <Compile Include="Capas\Dperfil.vb" />
+    <Compile Include="Capas\Dproducto.vb" />
+    <Compile Include="Capas\Dventa.vb" />
+    <Compile Include="categoria.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cliente.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detalle_venta.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="empleado.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSisMelodias.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSisMelodias.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSisMelodias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSisMelodias.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSisMelodias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pago.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="perfil.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\EditarEliminarProducto.designer.vb">
+      <DependentUpon>EditarEliminarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\EditarEliminarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\GestionCategoria.designer.vb">
+      <DependentUpon>GestionCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\GestionCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\MDIAdmin.Designer.vb">
+      <DependentUpon>MDIAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\MDIAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\NuevoProducto.designer.vb">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\NuevoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\consultas.vb" />
+    <Compile Include="Presentacion\Admin\Reportes\RPorCategoria.designer.vb">
+      <DependentUpon>RPorCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorCliente.designer.vb">
+      <DependentUpon>RPorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorEmpleado.designer.vb">
+      <DependentUpon>RPorEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorProducto.designer.vb">
+      <DependentUpon>RPorProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\Reportes\RPorProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Admin\SoloListarVentas.Designer.vb">
+      <DependentUpon>SoloListarVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Admin\SoloListarVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\SoloListarProductos.Designer.vb">
+      <DependentUpon>SoloListarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\SoloListarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\MDISuperAdmin.Designer.vb">
+      <DependentUpon>MDISuperAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\MDISuperAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\EditarEliminarEmpleado.designer.vb">
+      <DependentUpon>EditarEliminarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\EditarEliminarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\NuevoEmpleado.designer.vb">
+      <DependentUpon>NuevoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\SuperAdmin\NuevoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\EditarCliente.designer.vb">
+      <DependentUpon>EditarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\EditarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ImprimirVenta.Designer.vb">
+      <DependentUpon>ImprimirVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ImprimirVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarClientes.designer.vb">
+      <DependentUpon>ListarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarMisVentas.Designer.vb">
+      <DependentUpon>ListarMisVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarMisVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarProductos.designer.vb">
+      <DependentUpon>ListarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\ListarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\MDIVendedor.designer.vb">
+      <DependentUpon>MDIVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\MDIVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\NuevaVenta.Designer.vb">
+      <DependentUpon>NuevaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\NuevaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\NuevoCliente.designer.vb">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\NuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\AgregarClienteVenta.Designer.vb">
+      <DependentUpon>AgregarClienteVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\AgregarClienteVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\AgregarProductoVenta.Designer.vb">
+      <DependentUpon>AgregarProductoVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Vendedor\AgregarProductoVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="producto.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="validaciones\validar.vb" />
+    <Compile Include="venta.vb">
+      <DependentUpon>ModelSisMelodias.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\EditarEliminarProducto.resx">
+      <DependentUpon>EditarEliminarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\GestionCategoria.resx">
+      <DependentUpon>GestionCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\MDIAdmin.resx">
+      <DependentUpon>MDIAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\Reportes\RPorCategoria.resx">
+      <DependentUpon>RPorCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\Reportes\RPorCliente.resx">
+      <DependentUpon>RPorCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\Reportes\RPorEmpleado.resx">
+      <DependentUpon>RPorEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\Reportes\RPorProducto.resx">
+      <DependentUpon>RPorProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Admin\SoloListarVentas.resx">
+      <DependentUpon>SoloListarVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\SuperAdmin\SoloListarProductos.resx">
+      <DependentUpon>SoloListarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\SuperAdmin\MDISuperAdmin.resx">
+      <DependentUpon>MDISuperAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\SuperAdmin\EditarEliminarEmpleado.resx">
+      <DependentUpon>EditarEliminarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\SuperAdmin\NuevoEmpleado.resx">
+      <DependentUpon>NuevoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\EditarCliente.resx">
+      <DependentUpon>EditarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\ImprimirVenta.resx">
+      <DependentUpon>ImprimirVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\ListarClientes.resx">
+      <DependentUpon>ListarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\ListarMisVentas.resx">
+      <DependentUpon>ListarMisVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\ListarProductos.resx">
+      <DependentUpon>ListarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\MDIVendedor.resx">
+      <DependentUpon>MDIVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\NuevaVenta.resx">
+      <DependentUpon>NuevaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\AgregarClienteVenta.resx">
+      <DependentUpon>AgregarClienteVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Vendedor\AgregarProductoVenta.resx">
+      <DependentUpon>AgregarProductoVenta.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ModelSisMelodias.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelSisMelodias.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelSisMelodias.edmx.diagram">
+      <DependentUpon>ModelSisMelodias.edmx</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadros-negros-734708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-add_icon-icons.com_50077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-agregar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-prod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-prod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-prod1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-prod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vendedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copia-de-respaldo.png" />
+    <None Include="Resources\respaldo.png" />
+    <None Include="Resources\portapapeles1.png" />
+    <None Include="Resources\estadisticas1.png" />
+    <None Include="Resources\estadisticas.png" />
+    <None Include="Resources\portapapeles.png" />
+    <None Include="Resources\lapiz.png" />
+    <None Include="Resources\actualizar-flecha.png" />
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_38911.jpg" />
+    <None Include="Resources\IMG_3891.jpg" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\logout_2105636.png" />
+    <None Include="Resources\login_5785442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20220927-WA0049.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelSisMelodias.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSisMelodias.edmx</DependentUpon>
+      <LastGenOutput>ModelSisMelodias.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="ModelSisMelodias.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSisMelodias.edmx</DependentUpon>
+      <LastGenOutput>ModelSisMelodias.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\IMG-20220927-WA0049 %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
