@@ -1,0 +1,6 @@
+Usuario: admin
+Contraseña: 12345678
+Usuario: vendedor
+Contraseña: 12345678
+Usuario: superadmin
+Contraseña: 12345678
