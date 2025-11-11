@@ -49,11 +49,10 @@ Partial Class NuevoCliente
         Me.DGV1.AllowUserToOrderColumns = True
         Me.DGV1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV1.Location = New System.Drawing.Point(92, 575)
-        Me.DGV1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DGV1.Location = New System.Drawing.Point(61, 374)
         Me.DGV1.Name = "DGV1"
         Me.DGV1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        Me.DGV1.Size = New System.Drawing.Size(1254, 252)
+        Me.DGV1.Size = New System.Drawing.Size(836, 164)
         Me.DGV1.TabIndex = 5
         '
         'PanelPrincipal
@@ -74,18 +73,16 @@ Partial Class NuevoCliente
         Me.PanelPrincipal.Controls.Add(Me.LApellido)
         Me.PanelPrincipal.Controls.Add(Me.LNombre)
         Me.PanelPrincipal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PanelPrincipal.Location = New System.Drawing.Point(92, 80)
-        Me.PanelPrincipal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PanelPrincipal.Location = New System.Drawing.Point(61, 52)
         Me.PanelPrincipal.Name = "PanelPrincipal"
-        Me.PanelPrincipal.Size = New System.Drawing.Size(1254, 354)
+        Me.PanelPrincipal.Size = New System.Drawing.Size(836, 230)
         Me.PanelPrincipal.TabIndex = 3
         '
         'TBTel
         '
-        Me.TBTel.Location = New System.Drawing.Point(765, 115)
-        Me.TBTel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBTel.Location = New System.Drawing.Point(510, 75)
         Me.TBTel.Name = "TBTel"
-        Me.TBTel.Size = New System.Drawing.Size(379, 20)
+        Me.TBTel.Size = New System.Drawing.Size(254, 20)
         Me.TBTel.TabIndex = 18
         '
         'LTel
@@ -94,8 +91,7 @@ Partial Class NuevoCliente
         Me.LTel.BackColor = System.Drawing.Color.Transparent
         Me.LTel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LTel.ForeColor = System.Drawing.Color.White
-        Me.LTel.Location = New System.Drawing.Point(603, 108)
-        Me.LTel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LTel.Location = New System.Drawing.Point(402, 70)
         Me.LTel.Name = "LTel"
         Me.LTel.Size = New System.Drawing.Size(102, 25)
         Me.LTel.TabIndex = 17
@@ -103,10 +99,9 @@ Partial Class NuevoCliente
         '
         'TBDirec
         '
-        Me.TBDirec.Location = New System.Drawing.Point(765, 169)
-        Me.TBDirec.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBDirec.Location = New System.Drawing.Point(510, 110)
         Me.TBDirec.Name = "TBDirec"
-        Me.TBDirec.Size = New System.Drawing.Size(379, 20)
+        Me.TBDirec.Size = New System.Drawing.Size(254, 20)
         Me.TBDirec.TabIndex = 16
         '
         'LDireccion
@@ -115,8 +110,7 @@ Partial Class NuevoCliente
         Me.LDireccion.BackColor = System.Drawing.Color.Transparent
         Me.LDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LDireccion.ForeColor = System.Drawing.Color.White
-        Me.LDireccion.Location = New System.Drawing.Point(603, 162)
-        Me.LDireccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LDireccion.Location = New System.Drawing.Point(402, 105)
         Me.LDireccion.Name = "LDireccion"
         Me.LDireccion.Size = New System.Drawing.Size(108, 25)
         Me.LDireccion.TabIndex = 15
@@ -124,10 +118,9 @@ Partial Class NuevoCliente
         '
         'TBCorreo
         '
-        Me.TBCorreo.Location = New System.Drawing.Point(765, 55)
-        Me.TBCorreo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBCorreo.Location = New System.Drawing.Point(510, 36)
         Me.TBCorreo.Name = "TBCorreo"
-        Me.TBCorreo.Size = New System.Drawing.Size(379, 20)
+        Me.TBCorreo.Size = New System.Drawing.Size(254, 20)
         Me.TBCorreo.TabIndex = 14
         '
         'LCorreo
@@ -136,8 +129,7 @@ Partial Class NuevoCliente
         Me.LCorreo.BackColor = System.Drawing.Color.Transparent
         Me.LCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCorreo.ForeColor = System.Drawing.Color.White
-        Me.LCorreo.Location = New System.Drawing.Point(608, 46)
-        Me.LCorreo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LCorreo.Location = New System.Drawing.Point(405, 30)
         Me.LCorreo.Name = "LCorreo"
         Me.LCorreo.Size = New System.Drawing.Size(83, 25)
         Me.LCorreo.TabIndex = 13
@@ -145,10 +137,9 @@ Partial Class NuevoCliente
         '
         'TBDni
         '
-        Me.TBDni.Location = New System.Drawing.Point(186, 178)
-        Me.TBDni.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBDni.Location = New System.Drawing.Point(124, 116)
         Me.TBDni.Name = "TBDni"
-        Me.TBDni.Size = New System.Drawing.Size(379, 20)
+        Me.TBDni.Size = New System.Drawing.Size(254, 20)
         Me.TBDni.TabIndex = 12
         '
         'LDni
@@ -157,8 +148,7 @@ Partial Class NuevoCliente
         Me.LDni.BackColor = System.Drawing.Color.Transparent
         Me.LDni.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LDni.ForeColor = System.Drawing.Color.White
-        Me.LDni.Location = New System.Drawing.Point(28, 169)
-        Me.LDni.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LDni.Location = New System.Drawing.Point(19, 110)
         Me.LDni.Name = "LDni"
         Me.LDni.Size = New System.Drawing.Size(53, 25)
         Me.LDni.TabIndex = 11
@@ -168,11 +158,10 @@ Partial Class NuevoCliente
         '
         Me.BAgregar.Image = Global.proyecto_integrador.My.Resources.Resources.diskette
         Me.BAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BAgregar.Location = New System.Drawing.Point(537, 245)
-        Me.BAgregar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BAgregar.Location = New System.Drawing.Point(358, 159)
         Me.BAgregar.Name = "BAgregar"
-        Me.BAgregar.Padding = New System.Windows.Forms.Padding(8, 0, 8, 0)
-        Me.BAgregar.Size = New System.Drawing.Size(165, 72)
+        Me.BAgregar.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.BAgregar.Size = New System.Drawing.Size(110, 47)
         Me.BAgregar.TabIndex = 10
         Me.BAgregar.Text = "Agregar"
         Me.BAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -180,18 +169,16 @@ Partial Class NuevoCliente
         '
         'TBApellido
         '
-        Me.TBApellido.Location = New System.Drawing.Point(186, 120)
-        Me.TBApellido.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBApellido.Location = New System.Drawing.Point(124, 78)
         Me.TBApellido.Name = "TBApellido"
-        Me.TBApellido.Size = New System.Drawing.Size(379, 20)
+        Me.TBApellido.Size = New System.Drawing.Size(254, 20)
         Me.TBApellido.TabIndex = 5
         '
         'TBNombre
         '
-        Me.TBNombre.Location = New System.Drawing.Point(186, 54)
-        Me.TBNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TBNombre.Location = New System.Drawing.Point(124, 35)
         Me.TBNombre.Name = "TBNombre"
-        Me.TBNombre.Size = New System.Drawing.Size(379, 20)
+        Me.TBNombre.Size = New System.Drawing.Size(254, 20)
         Me.TBNombre.TabIndex = 4
         '
         'LApellido
@@ -200,8 +187,7 @@ Partial Class NuevoCliente
         Me.LApellido.BackColor = System.Drawing.Color.Transparent
         Me.LApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LApellido.ForeColor = System.Drawing.Color.White
-        Me.LApellido.Location = New System.Drawing.Point(24, 108)
-        Me.LApellido.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LApellido.Location = New System.Drawing.Point(16, 70)
         Me.LApellido.Name = "LApellido"
         Me.LApellido.Size = New System.Drawing.Size(95, 25)
         Me.LApellido.TabIndex = 1
@@ -213,8 +199,7 @@ Partial Class NuevoCliente
         Me.LNombre.BackColor = System.Drawing.Color.Transparent
         Me.LNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNombre.ForeColor = System.Drawing.Color.White
-        Me.LNombre.Location = New System.Drawing.Point(24, 46)
-        Me.LNombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LNombre.Location = New System.Drawing.Point(16, 30)
         Me.LNombre.Name = "LNombre"
         Me.LNombre.Size = New System.Drawing.Size(93, 25)
         Me.LNombre.TabIndex = 0
@@ -222,17 +207,15 @@ Partial Class NuevoCliente
         '
         'NuevoCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(30, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1464, 1000)
+        Me.ClientSize = New System.Drawing.Size(976, 650)
         Me.Controls.Add(Me.DGV1)
         Me.Controls.Add(Me.PanelPrincipal)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "NuevoCliente"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AgregarCliente"
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelPrincipal.ResumeLayout(False)

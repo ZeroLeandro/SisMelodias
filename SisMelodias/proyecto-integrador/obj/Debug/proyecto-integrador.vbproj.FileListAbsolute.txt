@@ -296,7 +296,6 @@ C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integra
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\bin\Debug\BCrypt.Net-Core.pdb
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\bin\Debug\EntityFramework.xml
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\obj\Debug\proyecto-integrador.vbproj.AssemblyReference.cache
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\obj\Debug\proyecto_integrador.Resources.resources
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\obj\Debug\proyecto_integrador.EditarEliminarProducto.resources
 C:\Users\mauri\Source\Repos\ZeroLeandro\SisMelodias\SisMelodias\proyecto-integrador\obj\Debug\proyecto_integrador.GestionCategoria.resources
